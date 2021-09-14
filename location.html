@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8358df18ed.js" crossorigin="anonymous"></script>
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <title>The Fancer - LOCATION</title>
+    <!-- 37.4882975024441, 126.99284830841655 -->
+    <style>
+        body {
+            background-color: #0b0047;
+            color: #faf8f1;
+            font-family: 'Stylish', sans-serif;
+        }
+
+        .home {
+            margin-right: 9%;
+            text-align: right;
+            font-size: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #faf8f1;
+            padding: 10px 10px 10px 10px;
+        }
+
+        a:hover{
+            background-color: #372a7e;
+            border-radius: 4px;
+        }
+
+        #googleMap {
+            border-radius: 10px;
+            margin: auto;
+            border: 5px solid #ffd700;
+            width: 80%;
+            height: 500px;
+            color: black;
+
+        }
+
+        h2 {
+            font-family: 'Rokkitt', serif;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+        }
+
+        .text {
+            width: 80%;
+            margin: auto;
+        }
+
+        .text p {
+            margin-left: auto;
+
+        }
+
+        footer {
+            background-color: #0b0047;
+            background-color: var(--dark-main-color);
+            color: rgb(250, 248, 241);
+            color: var(--text-bright-color);
+            font-family: 'Rokkitt', serif;
+            text-align: center;
+        }
+
+        .footerA {
+            padding: 30px 20px;
+            /*안쪽 여백*/
+            font-size: 22px;
+
+        }
+
+        .footerA i {
+            color: #ffd700;
+            font-size: 20px;
+        }
+
+        .footer .navbar_logo {
+            padding: 20px 20px 20px 20px;
+            ;
+        }
+
+        .text p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            .text p{
+                font-size: 1.9vw;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>LOCATION</h2>
+    <p class="home"><a href="index.html">HOME</a></p>
+    <br>
+    <div id="googleMap"></div>
+    <br>
+    <div class="text">
+        <P>서울특별시 서초구 방배로 165 제지층 1호</P>
+        <P>지하철 7호선 내방역 6번출구 50m</P>
+        <p>등록 및 일일체험 문의 : 02-111=2233</p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="footerA">
+
+            <a href="#"><i class="fab fa-critical-role"></i> The Fencer</a>
+
+        </div>
+
+
+        <div class="footerB">
+            Seoul Seocho-gu Bangbae-dong Bangbae-ro<br><br>
+            <a href="index.html">http://thefencer.net</a>
+        </div>
+    </footer>
+
+    <br><br>
+
+    <Script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(37.48828764145644, 126.99284712174398),
+                zoom: 16
+            };
+
+            var map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
+
+
+            var myPos1 = {
+                lat: 37.48828764145644,
+                lng: 126.99284712174398
+            };
+
+            var marker = new google.maps.Marker({
+                position: myPos1,
+                animation: google.maps.Animation.BOUNCE,
+                icon: "fencing.png"
+            });
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+            
+                content: "THE FANCER ACADEMY<br><br>대표전화  02)111-2233<br>평일 오후 6시부터 11시<br> 주말 오전 10시부터 오후6시"
+                
+
+            });
+            infowindow.open(map, marker);
+
+            google.maps.event.addListener(marker, 'click', function () {
+                map.setZoom(19);
+                map.setCenter(marker.getPosition());
+            })
+        }
+    </Script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQJaUk41UgA5SQfmdk52sw32EqAyOva0k&callback=myMap">
+    </script>
+
+
+
+
+</body>
+
+</html>

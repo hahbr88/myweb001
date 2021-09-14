@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- MADE BY 하병노 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fancer - MAIN</title>
+    <script src="https://kit.fontawesome.com/8358df18ed.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Stylish&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <nav class="navbar">
+        <!-- 바 로고 div -->
+        <div class="navbar_logo">
+            
+            <a href=""><i class="fab fa-critical-role"></i> The Fencer</a>
+        </div>
+
+        <!-- 바 메뉴 list -->
+        <div class="navbar_bars" id="myTopnav">
+            <ul class="varmenu">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="onedayclass.html">ONE DAY CLASS</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="location.html">LOCATION</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 바 아이콘 list  -->
+        
+            <ul class="navbar_icons" id="myTopnav">
+                <li>
+                    <a href="https://www.instagram.com/hbr_hls/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/frago1288/"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        
+
+        <!-- 햄버거 아이콘 -->
+        <!-- <a href="#" class="navbar__toigleBtn"><i class="fas fa-bars"></i></button> -->
+
+    </nav>
+
+
+    <!-- 이미지 슬라이드 container -->
+
+    <div class="slideshow-container">
+
+        <!-- width 100% 이미지 그리고 숫자 와 자막 -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="http://www.fencingkorea.com/mall/board_data/main_visual_01.jpg" style="width:100%">
+            <div class="text1">할 수 있다... 할 수 있다.&nbsp&nbsp&nbsp-박상영-</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="http://www.fencingkorea.com/mall/board_data/main_visual_02.jpg" style="width:100%">
+            <div class="text2">생각이 길면 용기는 사라진다.&nbsp&nbsp&nbsp-신아람-</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="http://www.fencingkorea.com/mall/board_data/main_visual_03.jpg" style="width:100%">
+            <div class="text3">그냥 한명씩만 이겨보자고 했는데... 결국 금메달까지 땄어요&nbsp&nbsp&nbsp-김지연-</div>
+        </div>
+
+        <!-- 이전이미지 다음이미지 버튼 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- 슬라이드 하단 동그라미 -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+
+    <article class="aticles">
+        <div class="fnews_div">
+            <h3 class="fnews_div_title">Fencing News</h3>
+            <dl class="fnews_div_content">
+                <dt class="newstitle"><a href="https://news.kbs.co.kr/news/view.do?ncd=5244035&ref=A">펜싱 남자 사브르, 올림픽 단체전 금메달…역시 세계 1위!</a></dt>
+                <dd><a href="https://news.kbs.co.kr/news/view.do?ncd=5244035&ref=A">오상욱, 구본길, 김정환, 김준호로 이루어진 대표팀은 오늘(28일) 일본 지바의 마쿠하리 메세에서 열린 대회 남자 사브르 단체전 결승에서 이탈리아를 45대 26으로 꺾고 금메달을 획득했습니다.</a></dd>
+                <br>
+                <dt class="newstitle"><a href="https://www.chosun.com/sports/tokyo-2020/2021/08/10/PSQVWXXLEFCNNAGHB3CJ6SL6XQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news">“날카로워진 한국펜싱, 외국선수들 훈련하자고 줄서요”</a></dt>
+                <dd><a href="https://www.chosun.com/sports/tokyo-2020/2021/08/10/PSQVWXXLEFCNNAGHB3CJ6SL6XQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news">“세계 펜싱계가 한국의 존재마저 모르던 시절부터 검을 들었던 펜싱인으로서, 지금 한국 대표팀이 주목받는 걸 보니 정말 감개무량하네요.”</a></dd>
+            </dl>
+        </div>
+        
+        <div class="cnews_div">
+            <h3 class="cnews_div_title">Club News</h3>
+            <table class="cnews_div_content">
+                <tr>
+                    <td class="clubnews"><a href="#">이번 주말 클럽내 단체전이 예정되어 있습니다.</a></td>
+                    <td class="date">2021.08.19</td>
+                </tr>
+                <tr>
+                    <td class="clubnews"><a href="#">올림픽의 긍정적인 효과</a></td>
+                    <td class="date">2021.08.05</td>
+                </tr>
+                <tr>
+                    <td class="clubnews"><a href="#">원데이 클래스 체험행사가 진행됩니다.</a></td>
+                    <td class="date">2021.05.07</td>
+                </tr>
+                <tr>
+                    <td class="clubnews"><a href="#">새해가 밝았습니다. 회원여러분</a></td>
+                    <td class="date">2021.01.01</td>
+                </tr>
+                <tr>
+                    <td class="clubnews"><a href="#">The Fancer 아카데미 클럽 홈페이지를 오픈합니다.</a></td>
+                    <td class="date">2020.03.06</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </article>
+    <br>
+
+
+
+
+
+    <!-- 멤버 이미지 -->
+    <!-- <div class="imgs">
+        <h4>Pictures of our members.</h4>
+        <img class="members" src="http://eunhofc.com/wp/wp-content/uploads/2021/08/20210808_171925.jpg" alt="no">
+        <img class="members" src="http://eunhofc.com/wp/wp-content/uploads/2021/08/20210731_110921.jpg" alt="no">
+        <img class="members" src="http://eunhofc.com/wp/wp-content/uploads/2021/08/20210731_104404.jpg" alt="no">
+        <img class="members" src="http://eunhofc.com/wp/wp-content/uploads/2021/08/20210731_110851.jpg" alt="no">
+        <img class="members" src="http://eunhofc.com/wp/wp-content/uploads/2021/07/20210729_174253.jpg" alt="no">
+        <img class="members" src="http://eunhofc.com/wp/wp-content/uploads/2021/07/20210729_200039.jpg" alt="no">
+    </div> -->
+
+    <div style="text-align:center">
+        <h3 style="color: darkgoldenrod;">OUR MEMBERS PHOTO</h3>
+      </div>
+      
+      <!-- The four columns -->
+      <div class="row">
+        <div class="column">
+          <img src="http://eunhofc.com/wp/wp-content/uploads/2021/08/20210808_171925.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="http://eunhofc.com/wp/wp-content/uploads/2021/08/20210731_110921.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="http://eunhofc.com/wp/wp-content/uploads/2021/07/20210729_174253.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="http://eunhofc.com/wp/wp-content/uploads/2021/07/20210729_200039.jpg" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+
+    
+    
+
+
+    <!-- 푸터 -->
+    <p> </p>
+    <footer>
+        <div class="footerA">
+            
+            <a href="#"><i class="fab fa-critical-role"></i> The Fencer</a>
+            
+        </div>
+
+
+        <div class="footerB">
+            Seoul Seocho-gu Bangbae-dong Bangbae-ro<br><br>
+            <a href="#">http://thefencer.net</a>
+        </div>
+        
+
+
+    </footer>
+
+    <br><br><br>
+
+
+
+   
+</body>
+
+</html>
